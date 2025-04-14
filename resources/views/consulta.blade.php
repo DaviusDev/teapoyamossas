@@ -173,18 +173,18 @@
     <div class="barra-inferior">
         <div class="iconos-redes">
             <div class="red-social">
-                <a href="URL_FACEBOOK" target="_blank"><img src="facebook.png" alt="Facebook" class="icono-red"></a>
+                <a href="URL_FACEBOOK" target="_blank"><img src="IMG/facebook.png" alt="Facebook" class="icono-red"></a>
                 <span class="nombre-usuario">Te Apoyamos FB</span>
 
             </div>
 
              <div class="red-social">
-                <a href="URL_INSTAGRAM" target="_blank"><img src="instragram.jpg" alt="Instagram" class="icono-red"></a>
+                <a href="URL_INSTAGRAM" target="_blank"><img src="IMG/instragram.jpg" alt="Instagram" class="icono-red"></a>
                 <span class="nombre-usuario">@TeApoyamosSAS</span>
               </div>
 
              <div class="red-social">
-                <a href="URL_TWITTER" target="_blank"><img src="x.png" alt="Twitter" class="icono-red"></a>
+                <a href="URL_TWITTER" target="_blank"><img src="IMG/x.png" alt="Twitter" class="icono-red"></a>
                 <span class="nombre-usuario">@TeApoyamosSASX</span>
               </div>
     </div>
