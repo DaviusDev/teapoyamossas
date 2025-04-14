@@ -1,0 +1,144 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(207, 231, 239);
+    margin: 0;
+    padding: 0;
+}
+
+.barra-superior {
+    background-color: #8cb5de;
+    border-bottom: 1px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-logo h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.grupo-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.botones-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.buscador {
+    display: flex;
+}
+
+.buscador input {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.btn-clear {
+    margin-left: 8px;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.logo-empresa {
+    width: 200px;
+    margin-left: 30px;
+}
+
+.contenedor-principal {
+    display: flex;
+    margin: 30px auto;
+    max-width: 1200px;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+nav-bar a {
+    transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+.barra-inferior {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-red {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.barra-inferior {
+    background-color: #3889f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-social {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.icono-red {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.titulo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important; /* Hace la barra más corta */
+}
+
+.busqueda-container {
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa !important;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .busqueda-container .row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .busqueda-container .col-auto {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+}

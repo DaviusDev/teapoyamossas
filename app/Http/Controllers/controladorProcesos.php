@@ -34,7 +34,7 @@ class controladorProcesos extends Controller // Esta clase tiene el mismo nombre
     public function show($idProceso)
     {
         $proceso = Proceso::with(['cliente', 'empleado'])->findOrFail($idProceso);
-        return view('procesos.show', compact('proceso'));
+        return view('consulta', compact('procesos'));
     }
     
 }
