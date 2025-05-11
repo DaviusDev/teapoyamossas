@@ -7,6 +7,8 @@ use App\Http\Controllers\VacanteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use App\Http\Controllers\LoginController;
+
 
 
 Route::get('/', function () {
@@ -21,22 +23,11 @@ Route::get('/proceso', function () {
 Route::get('/proceso', [controladorProcesos::class, 'index'])->name('proceso');
 Route::get('/proceso/buscar', [controladorProcesos::class, 'buscar'])->name('proceso.buscar');
 
-Route::post('/login', function (Request $request) {
-    $email = $request->input('email');
-    $password = $request->input('password');
+Route::get('entrar', function () {
+    return view('entrar');
+})->name('entrar');
 
-    if ($email === 'test@test.com' && $password === 'test') {
-        return redirect('vacantes'); // Redirige a la página que quieras
-    }
 
-    return back()->with('error', 'Credenciales incorrectas');
-})->name('login');
-
-// Add the logout route
-Route::post('/logout', function () {
-    Auth::logout();
-    return redirect('/');
-})->name('logout');
 
 
 Route::get('carrera', function () {
@@ -57,8 +48,9 @@ Route::post('/avanzar', [VacanteController::class, 'avanzarPostulante']);
 
 
 
-
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
 
 
 require __DIR__.'/settings.php';
-require __DIR__.'/auth.php';
+

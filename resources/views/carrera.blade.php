@@ -24,7 +24,7 @@
                 <a href="{{ route('index') }}" class="btn btn-primary">Inicio</a>
                 <button type="button" class="btn btn-primary"onclick="location.href='consulta.html'">Procesos</button>
                 <button type="button" class="btn btn-primary"onclick="location.href='#'">Carrera</button>
-                <a href="{{ route('vacantes') }}" class="btn btn-primary">Reclutamiento</a>
+                <a href="{{ route('login') }}" class="btn btn-primary">Reclutamiento</a>
               </div>
 
             <!-- Barra de búsqueda -->
